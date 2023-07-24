@@ -74,7 +74,6 @@ nav ul li a:hover{
   .navbar-menu li a {
     display: block;
   }
-
 	
 }
 
@@ -112,6 +111,29 @@ form {
 label {
 	display: block;
 	margin-bottom: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  cursor: pointer;
+}
+
+.photo-card {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-card img{
+  width: 300px;
+  height: 350px;
+  border-radius: 10%;
+}
+
+.photo-card:hover {
+  transform: scale(1.03);
 }
 
 input,
@@ -163,10 +185,4 @@ button:hover {
 	border-radius: 50%;
 }
 
-.rectangle {
-  width: 200px;
-  height: 400px;
-  background-color: #f0f0f0;
-  border: 2px solid #333;
-}
 
