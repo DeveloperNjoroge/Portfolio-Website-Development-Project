@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="javascript.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>PORTFOLIO WEBSITE</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="navbar-menu" id="menu">
+        <li class="menu"><a href="index.html">Home</a></li>
+        <li class="menu"><a href="#">About</a></li>
+        <li class="menu"><a href="#">Projects</a></li>
+        <li class="menu"><a href="#">Resume</a></li>
+        <li class="menu"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container">
+    
+    <form id="myForm">
+      <label for="name"><b>Name:</b></label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+      
+      <label for="email"><b>Email:</b></label>
+      <input type="email" id="email" name="email" placeholder="Example@gmail.com">
+      
+      <label for="message"><b>Message:</b></label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+      
+      <button type="submit"><b>Send Message</b></button>
+    </form>
+    <div id="successMessage" style="display: none; color: red;">Message sent successfully!</div>
+
+    <p style="font-size: 1.3rem;">
+      Contact: 437 499 8316
+      <br>
+      Email: <a href="https://www.gmail.com/" target="_blank">njoshjose2020@gmail.com</a>
+      <br>
+      Get In Touch.
+    </p>
+  </section>
+
+  <footer class="footer">
+    <div class="social-media">
+      <h1>Social Media</h1> 
+      <ul>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedIn.com/" target="_blank"><i class="fa fa-link"></i></a>
+        <a href="https://www.telegram.com/" target="_blank"><i class="fa fa-telegram"></i></a>
+        <a href="https://www.WhatsApp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+      </ul>
+    </div> 
+    <p style="color: white;  font: 1.2rem; font-family: 'Courier New', Courier, monospace;">&copy; 2023 JOSEPH PORTFOLIO. All rights reserved.</p> 
+</footer>
+</body>
+</html>
