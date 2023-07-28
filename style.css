@@ -180,3 +180,47 @@ button:hover {
 }
 
 
+/* .sub-menu-bar{
+	display: none;
+	background-color: lightseagreen;
+	border-radius: 3px;
+}
+
+.navbar-menu .sub-menu-bar{
+  display: block;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -15px;
+	color: white;
+}
+
+.sub-menu-bar ul li a:hover{
+	color: blue;
+	padding-left: 8px;
+} */
+
+nav ul li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 0;
+}
+
+nav ul li:hover .sub-menu {
+  display: block;
+}
+
+nav ul li .sub-menu li {
+  display: block;
+}
+
+nav ul li .sub-menu li a {
+  padding: 8px 15px;
+  color: #666;
+}
+
+nav ul li .sub-menu li a:hover {
+  background-color: #e3e3e3;
+}
