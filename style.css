@@ -183,4 +183,5 @@ button:hover {
 .sub-menu li {
   display: block;
   font-size: 0.7rem;
+  position: static;
 }
