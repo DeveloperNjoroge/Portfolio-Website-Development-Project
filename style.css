@@ -25,7 +25,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 nav ul li a {
@@ -37,6 +37,30 @@ nav ul li a:hover{
   transform: scale(1.25);
   color: red;
 	font-size: 15px;
+}
+
+.sub-menu{
+  display: none;
+}
+
+nav ul li:hover .sub-menu{
+  display: block;
+  position: absolute;
+  background-color: #333;
+}
+
+nav ul li:hover .sub-menu ul li{
+  display: block;
+  font-size: 0.8rem;
+  transform: scale(0.9);
+  width: 95px;
+  margin: 15px;
+  text-align: left;
+  border-bottom: 1px dotted #fff;
+}
+
+nav ul li:hover .sub-menu ul li:last-child{
+  border-bottom: none;
 }
 
 .navbar-toggle {
@@ -177,11 +201,4 @@ button:hover {
 	transform: scale(1.25);
 	background-color: red;
 	border-radius: 50%;
-}
-
-
-.sub-menu li {
-  display: block;
-  font-size: 0.7rem;
-  position: static;
 }
